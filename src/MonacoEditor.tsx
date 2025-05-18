@@ -44,7 +44,7 @@ export function MonacoEditor({ parsedSDP }: { parsedSDP: any }) {
   };
 
   return (
-    <>
+    <div className="main-container">
       <div className="controls-container" style={{ marginBottom: '1rem' }}>
         <label>
           Theme:&nbsp;
@@ -79,7 +79,7 @@ export function MonacoEditor({ parsedSDP }: { parsedSDP: any }) {
 
       <Editor
         height="50rem"
-        width="70%"
+        width="100%"
         defaultLanguage="json"
         defaultValue={JSON.stringify(sdp, null, 2)}
         theme={theme}
@@ -93,9 +93,9 @@ export function MonacoEditor({ parsedSDP }: { parsedSDP: any }) {
         onChange={handleParseSDPChange}
       />
 
-      <button className="btn copy-parsed-btn" onClick={copyParsedSDP}>
+      <button className="copy-parsed-btn" onClick={copyParsedSDP}>
         Copy Parsed SDP
       </button>
-    </>
+    </div>
   );
 }

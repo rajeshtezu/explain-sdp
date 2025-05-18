@@ -51,13 +51,3 @@
 .btn:hover {
   background: #0056b3;
 }
-
-.copy-parsed-btn {
-  background: #28a745;
-  width: 12rem;
-  margin: 1rem 0;
-}
-
-.copy-parsed-btn:hover {
-  background: #218838;
-}
